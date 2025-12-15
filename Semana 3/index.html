@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Semana 3 - HTML5 y CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi Proyecto de Desarrollo Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Aprendiendo HTML5</h2>
+            <p>
+                Este es un párrafo introductorio donde aplicamos <strong>negritas para resaltar ideas clave</strong> y también usamos <em>cursivas para dar énfasis</em> a ciertos términos técnicos.
+            </p>
+        </section>
+
+        <article id="multimedia">
+            <h3>Recursos Multimedia</h3>
+            
+            <div class="media-container">
+                <p>Imagen desde assets:</p>
+                <img src="assets/img/Captura de pantalla 2025-10-17 224428.png" alt="Descripción de la imagen de muestra" width="300">
+            </div>
+
+            <div class="media-container">
+                <p>Video desde assets:</p>
+                <video controls width="300">
+                    <source src="assets/video/MovieMaker Project_1.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </article>
+
+        <section>
+            <h3>Listas de Tareas</h3>
+            <ol>
+                <li>Crear estructura de carpetas.</li>
+                <li>Escribir código HTML.</li>
+                <li>Aplicar estilos CSS.</li>
+            </ol>
+
+            <ul>
+                <li>HTML5 Semántico</li>
+                <li>CSS3</li>
+                <li>Git y GitHub</li>
+            </ul>
+
+            <p>Visita documentación externa: <a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a>.</p>
+        </section>
+
+        <section>
+            <h3>Horario de Estudio</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Tema</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>Estructura Web</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>Estilos CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>Publicación (GitHub)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h3>Contáctame</h3>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre: Maurcio Correa</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@email.com" required>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Semana 3 - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

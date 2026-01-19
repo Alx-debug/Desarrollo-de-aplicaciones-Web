@@ -1,0 +1,110 @@
+/* Reset básico y fuente */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+/* Estilos de Validación */
+input.valid {
+    border-color: #2ecc71; /* Verde */
+}
+
+input.invalid {
+    border-color: #e74c3c; /* Rojo */
+}
+
+/* Mensajes de error */
+.error-msg {
+    display: block;
+    font-size: 0.85rem;
+    color: #e74c3c;
+    margin-top: 0.3rem;
+    height: 1.2rem; /* Reserva espacio para evitar saltos */
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+button {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#btn-submit {
+    background-color: #3498db;
+    color: white;
+}
+
+#btn-submit:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+#btn-submit:hover:enabled {
+    background-color: #2980b9;
+}
+
+#btn-reset {
+    background-color: #95a5a6;
+    color: white;
+}
+
+#btn-reset:hover {
+    background-color: #7f8c8d;
+}

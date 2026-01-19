@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro Validado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="formulario" novalidate>
+            <h2>Registro de Usuario</h2>
+
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Mínimo 3 caracteres">
+                <span class="error-msg" id="error-nombre"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                <span class="error-msg" id="error-email"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Debes ser mayor de edad">
+                <span class="error-msg" id="error-edad"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" placeholder="Mín. 8 caracteres, 1 número, 1 especial">
+                <span class="error-msg" id="error-password"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirmar Contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Repite tu contraseña">
+                <span class="error-msg" id="error-confirm-password"></span>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" id="btn-submit" disabled>Enviar</button>
+                <button type="reset" id="btn-reset">Reiniciar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
